@@ -1,0 +1,39 @@
+.categories-widget__list {
+  display: flex;
+  gap: 20px;
+}
+.categories-widget__item {
+  display: block;
+  flex-basis: calc(100% / 3);
+}
+.categories-widget__item-img {
+  max-width: 100%;
+}
+.categories-widget__item-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categories-widget__item-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.categories-widget__item-cta {
+  position: relative;
+  padding-right: 11px;
+  font-size: 14px;
+  font-weight: 600;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    background-image: url("/images/shop-now-arrow.svg");
+    background-size: cover;
+  }
+}
