@@ -59,3 +59,37 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px;
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: calc(1440px + 100px);
+    padding: 0 50px;
+  }
+}
+// Buttons
+.app-btn {
+  border: 2px solid $black;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  &:hover {
+    background-color: $black;
+    color: $white;
+    transition: all 0.3s ease;
+  }
+}
+
+// App section
+.app-section {
+  margin-top: 100px;
+  &__title {
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
